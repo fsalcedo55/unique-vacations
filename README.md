@@ -26,6 +26,6 @@ This project can be run using Visual Studio Code's Live Server plugin. Here's ho
 
    - Open the cloned project directory in VS Code.
 
-3. **Open index.html or winter-sale.html.**
+3. **Open index.html.**
    - Right-click in the editor and choose "Open with Live Server".
    - Your default browser will open the webpage.
