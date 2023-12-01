@@ -27,5 +27,10 @@ This project can be run using Visual Studio Code's Live Server plugin. Here's ho
    - Open the cloned project directory in VS Code.
 
 3. **Open index.html.**
+
    - Right-click on index.html and choose "Open with Live Server".
    - Your default browser will open the webpage.
+
+   ![Alt text](image.png)
+
+   ![Alt text](image-1.png)
