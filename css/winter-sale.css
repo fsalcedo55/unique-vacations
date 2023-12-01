@@ -1,0 +1,885 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+h1 {
+  margin: 5px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+sup {
+  font-size: medium;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.top-banner {
+  background-color: #2477ad;
+  font-weight: 500;
+  padding: 6px;
+}
+
+.top-banner a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.679);
+
+  font-size: 14px;
+}
+
+.top-banner a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.top-banner a:focus {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.431);
+}
+
+.banner-top-image {
+  background-image: url("../assets/winter-sale/winter-blues-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+  margin-bottom: 500px;
+}
+
+@media (max-width: 800px) {
+  .banner-top-image {
+    background-image: url("../assets/winter-sale/winter-blues-banner-mobile.jpg");
+    min-height: 500px;
+    width: 100%;
+  }
+}
+
+.white-container {
+  position: absolute;
+  background-color: white;
+  width: 65%;
+  height: 300px;
+  bottom: -410px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 80px 60px 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.white-container-first-section {
+  border-bottom: 3px solid lightgray;
+  display: flex;
+  margin: 0 150px 0 150px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .white-container {
+    position: absolute;
+    background-color: white;
+    width: 65%;
+    height: 500px;
+    bottom: -1920px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 80px 60px 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 1300px;
+  }
+
+  .white-container-first-section {
+    border-bottom: 3px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px 0 150px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
+}
+
+.and-element {
+  background-color: rgba(0, 0, 0, 0.501);
+  color: white;
+  font-size: x-small;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+}
+
+.plus-element {
+  background-color: black;
+  color: white;
+  font-size: x-small;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 800;
+  margin: 20px auto;
+}
+
+.starting-at {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.exclusively {
+  font-size: 12px;
+  padding: 8px;
+}
+
+.burn-up-to {
+  font-weight: 800;
+}
+
+.hurry {
+  color: #009ccb;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 3px;
+  font-weight: 500;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 8px;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo p {
+  color: white;
+  font-size: 8px;
+  font-weight: 200;
+  word-spacing: 3px;
+}
+
+.sandals-logo {
+  width: 100px;
+}
+
+.right-menu {
+  display: flex;
+}
+
+.both-menus {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+@media (max-width: 620px) {
+  .both-menus {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 620px) {
+  .mobile-menu {
+    display: block;
+    padding: 8px;
+  }
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  padding: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 11px;
+}
+
+.secondary-nav-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.secondary-nav-menu li {
+  padding: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 8px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.secondary-nav-menu li:hover {
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.check-rates-btn {
+  background-color: #3bb6c9;
+  padding: 8px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-rates-btn div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-rates-font {
+  font-size: 12px;
+}
+
+.availability-font {
+  font-size: 11px;
+}
+
+.limited-time-offer {
+  min-width: 300px;
+  width: 300px;
+  margin: 265px auto 0 auto;
+  height: 70px;
+}
+
+.limited-time-offer-title {
+  background-color: white;
+  color: black;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  padding: 6px;
+}
+
+.limited-time-offer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.415);
+  gap: 18px;
+}
+
+.limited-time-offer-numbers {
+  color: white;
+  font-size: 20px;
+}
+
+.limited-time-offer-time {
+  font-size: 12px;
+  color: white;
+}
+
+.stay-5-nights {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stay-5-nights-price {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.resort-credit {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 650px auto;
+  }
+}
+
+.important {
+  background-color: #427da9;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 4px;
+  width: 25%;
+  margin: 20px auto;
+}
+
+.register-booking {
+  font-weight: 600;
+}
+
+.receive-winter-blues-sale-offer {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.already-booked {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+
+.line-around-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: relative;
+  z-index: 4;
+}
+
+.line-around-plus span {
+  background-color: #f4f4f4;
+  padding: 8px;
+  z-index: 6;
+  font-weight: 400;
+}
+
+.line-around-plus::before,
+.line-around-plus::after {
+  content: "";
+  background-color: #cfcfcf;
+  height: 1px;
+  width: 50%;
+  position: absolute;
+}
+
+.line-around-plus::before {
+  left: 0;
+  top: 50%;
+  margin-right: 5px;
+}
+
+.line-around-plus::after {
+  right: 0;
+  top: 50%;
+  margin-left: 5px;
+}
+
+.on-sale-card {
+  background-color: white;
+  height: 265px;
+  margin: 20px auto;
+  display: flex;
+}
+
+@media (max-width: 975px) {
+  .on-sale-card {
+    background-color: white;
+    height: 265px;
+    margin: 250px auto 80px auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.sandals-ochi-image {
+  min-height: 265px;
+  min-width: 265px;
+  background-image: url("../assets/winter-sale/sandals-ochi.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.sandals-royal-image {
+  min-height: 265px;
+  min-width: 265px;
+  background-image: url("../assets/winter-sale/sandals-royal-barbados.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.on-sale-card-text-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 16px;
+}
+
+.on-sale-card-title {
+  border-bottom: 1px solid #cfcfcf;
+  width: 100%;
+  display: flex;
+  align-items: left;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.on-sale-card-subtitle {
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.on-sale-card-paragraph {
+  font-size: 10px;
+  text-align: left;
+  margin: 10px 0 5px 0;
+}
+
+@media (max-width: 975px) {
+  .on-sale-card-paragraph {
+    display: none;
+  }
+
+  .view-resort {
+    display: none;
+  }
+
+  .on-sale-card-text-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 16px 16px 16px;
+    justify-content: space-between;
+    background-color: white;
+  }
+}
+
+.view-resort {
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.book-a-stay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.book-a-stay-sections {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-a-stay-title {
+  font-size: 12px;
+  color: #01b7ee;
+}
+
+.book-a-stay-subtitle {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.on-sale-card-actions {
+  display: flex;
+  font-size: 11px;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.view-offer-button {
+  background-color: lightgray;
+  padding: 8px 26px;
+  margin-right: 10px;
+}
+
+.view-rooms-button {
+  background-color: black;
+  color: white;
+  padding: 8px 46px;
+}
+
+.view-rooms-button-subtext {
+  font-size: 8px;
+  padding: 5px;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 10px;
+  background-color: #cfcfcf;
+}
+
+.vertical-line-longer {
+  width: 1px;
+  height: 30px;
+  background-color: #cfcfcf90;
+}
+
+.book-a-stay-title-dates {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.book-a-stay-subtitle-small {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.book-a-stay-subtitle-bigger {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.reserve-your-room {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.last-section-paragraph {
+  padding: 10px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.view-price {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.footer {
+  background-color: black;
+  height: 580px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    background-color: black;
+    height: 1200px;
+  }
+}
+
+.footer-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 500;
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.108);
+}
+
+@media (max-width: 1024px) {
+  .footer-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 500;
+    width: 65%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.108);
+  }
+}
+
+.footer-list-item {
+  color: rgb(166, 166, 166);
+  display: flex;
+  align-items: center;
+}
+
+.footer-list-item img {
+  height: 15px;
+  padding-right: 10px;
+}
+
+.bottom-logo {
+  margin-top: 25px;
+  height: 35px;
+}
+
+.enter-to-win {
+  padding: 12px;
+  font-size: 12px;
+  color: #01b7ee;
+  word-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.arrow-image {
+  width: 8px;
+  height: auto;
+  padding-left: 5px;
+}
+
+.footer-list-item-second {
+  color: rgb(166, 166, 166);
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+}
+
+.footer-list-second {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 500;
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.108);
+  border-top: 1px solid rgba(255, 255, 255, 0.108);
+}
+
+@media (max-width: 1024px) {
+  .footer-list-second {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin: 0 auto;
+    padding: 20px 0 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.108);
+    border-top: 1px solid rgba(255, 255, 255, 0.108);
+  }
+}
+
+.footer-list-third {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 500;
+  width: 45%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+@media (max-width: 1024px) {
+  .footer-list-third {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    width: 45%;
+    margin: 0 auto 50px auto;
+    padding: 20px 0;
+  }
+}
+
+.bottom-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.108);
+  width: 65%;
+  margin: 0 auto;
+}
+
+.sandals1800 {
+  color: rgba(255, 255, 255, 0.761);
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding-top: 30px;
+}
+
+.open-24-hrs-a-day {
+  color: rgba(160, 160, 160, 0.349);
+  font-size: 10px;
+  padding: 2px;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  width: 7%;
+  gap: 10px;
+  padding: 20px;
+}
+
+.social-list-item {
+  border: 1px solid rgba(255, 255, 255, 0.158);
+  border-radius: 20%;
+  min-width: 22px;
+  min-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.social-image {
+  height: 12px;
+  width: auto;
+}
+
+.affiliates {
+  color: rgba(255, 255, 255, 0.435);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 30%;
+  font-size: 7px;
+  padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  .affiliates {
+    color: rgba(255, 255, 255, 0.435);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 30%;
+    font-size: 10px;
+    padding: 10px;
+    gap: 50px;
+  }
+}
+
+.affiliate-logos {
+  height: 24px;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+.gray-footer {
+  background-color: #121212;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.gray-footer-container {
+  display: flex;
+  width: 25%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+@media (max-width: 1024px) {
+  .gray-footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    gap: 20px;
+  }
+
+  .right-side p {
+    text-align: center;
+    font-size: 7px;
+  }
+
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.548);
+  }
+}
+
+.card-image {
+  max-height: 90px;
+  max-width: 160px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.548);
+  padding-left: 20px;
+}
+
+.right-side p {
+  text-align: left;
+  font-size: 7px;
+}
