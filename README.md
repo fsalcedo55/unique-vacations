@@ -4,10 +4,10 @@ This project is part of my application process for the Web Developer role at Uni
 
 ## Project Structure
 
-index.html
-winter-sale.html
-css/: Contains CSS files for styling.
-assets folder for all the images and icons.
+    - index.html
+    - winter-sale.html
+    - css/: Contains CSS files for styling.
+    - assets folder for all the images and icons.
 
 ## Local Development
 
